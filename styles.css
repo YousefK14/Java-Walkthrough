@@ -1,0 +1,30 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af); /* Gradient background */
+    font-family: Arial, sans-serif;
+}
+
+/* Center the video container */
+.video-container {
+    width: 80vw; /* Make the video take up 90% of the viewport width */
+    height: 40vw; /* Make the height proportional to the width for a 16:9 ratio */
+    max-width: 1600px; /* Prevent the video from being too large on very wide screens */
+    max-height: 900px; /* Prevent the video from being too large on very tall screens */
+    position: relative;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Add a shadow to the frame */
+    border-radius: 10px; /* Smooth rounded corners */
+    overflow: hidden; /* Prevent iframe from spilling out */
+}
+
+/* Make the iframe responsive */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
